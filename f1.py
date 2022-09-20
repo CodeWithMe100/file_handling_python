@@ -1,4 +1,3 @@
-file_open = open("file.txt", "r")
-file_content = file_open.read()
-print(file_content)
-file_open.close() # it's a good practice to close a file
+with open("file.txt", "r") as file_open:
+  print(file_open.read())
+  # small code and no need to close a file now...
